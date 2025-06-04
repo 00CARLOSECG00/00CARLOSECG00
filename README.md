@@ -37,7 +37,7 @@ _Simulador de juego de Mancala desarrollado como proyecto universitario._
 ## 📫 Contacto
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/00carlos-caicedo00/)
-- ✉️ carlos.tucorreo@ejemplo.com  
+- ✉️ carloscaicedog2008.cc@gmail.com 
 - 📍 Bogotá, Colombia
 
 ---
