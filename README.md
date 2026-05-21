@@ -65,7 +65,7 @@ Retrieved passages are then passed to the Groq API, which generates structured r
 > `Python` · `sentence-transformers` · `vector database` · `RAG` · `semantic search` · `GROQ`
 ---
 
-### 🏆 [SabanaHack 2025 — Hackathon](https://github.com/00CARLOSECG00/Hackaton2025)
+### 🏆 [SabanaHack 2025 — Hackathon](https://github.com/00CARLOSECG00/404-Not-Found-Sleep-)
 **Python · Problem Solving · Collaborative Development**
 
 Participated in SabanaHack 2025, a competitive hackathon hosted by Universidad de La Sabana. Contributed to a Python-based solution under time pressure, collaborating with a cross-functional team to design, prototype, and present a working solution.
