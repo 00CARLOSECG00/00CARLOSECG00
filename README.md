@@ -50,6 +50,21 @@ I build data pipelines, ML systems, and AI-powered solutions. Currently focused 
 
 ## 📌 Featured Projects
 
+### 🎯 [Job Offer Scraper](https://github.com/00CARLOSECG00/Job-offer-scraper)
+**n8n · Groq API · Google Sheets API · Gmail API**
+
+End-to-end n8n automation that discovers junior/entry-level job openings, filters them against a profile and preferences stored in Google Sheets, scores each one with an LLM, and emails a curated report — the same system that powers the job-search tables built earlier in this profile.
+
+- **Multi-source scraping:** queries Remotive, Jobicy, The Muse, and Get on Board in parallel, then normalizes all four into one schema
+- **Rule-based filtering:** rejects unwanted locations, rejected role titles (e.g. *senior*, *lead*), and rejected keywords, requiring desired roles to appear in the job title before any LLM call is spent
+- **LLM evaluation (Groq):** sends each of up to 40 qualifying offers to `openai/gpt-oss-120b` for a structured fit score, summary, and matched/missing skills, rate-limited to 1 request/10s with retries
+- **Gap-skills tracking:** logs missing skills detected across runs to a `Gap_Skills` sheet, with a secondary workflow that consolidates and ranks them by frequency
+- **Automated reporting:** filters offers marked `aplica = true` and emails a formatted report via Gmail, running 4×/week on a schedule
+
+> `n8n` · `Groq API` · `LLM Evaluation` · `Google Sheets API` · `Gmail API` · `Workflow Automation` · `JSON Parsing`
+
+---
+
 ### 💸 [WhatsApp AI Financial Tracker](https://github.com/00CARLOSECG00/WhatsApp-Expense-Income-Tracker)
 **Node.js · n8n · Groq API (Qwen) · MongoDB Atlas · Google Sheets API**
 
