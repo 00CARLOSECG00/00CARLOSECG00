@@ -4,8 +4,7 @@
 
 I build data pipelines, ML systems, and AI-powered solutions. Currently focused on large-scale data processing, NLP, and semantic search — with hands-on experience in distributed computing (Databricks/PySpark), workflow automation (n8n), LLM orchestration (LangChain), and cloud analytics (BigQuery).
 
-[![Lenguajes Top](https://github-readme-stats.vercel.app/api/top-langs/?username=00CARLOSECG00&layout=compact&theme=radical)](https://github.com/00CARLOSECG00)
-
+[![Lenguajes Top](https://github-readme-stats.vercel.app/api/top-langs?username=00CARLOSECG00&layout=compact&theme=radical)](https://github.com/00CARLOSECG00)
 ---
 
 ## 🛠 Tech Stack
