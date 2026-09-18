@@ -2,8 +2,7 @@
 
 **Systems Engineering Student · Pontificia Universidad Javeriana · Bogotá, Colombia**
 
-I build data pipelines, ML systems, and AI-powered solutions. Currently focused on large-scale data processing, NLP, and semantic search — with hands-on experience in distributed computing (Databricks/PySpark), workflow automation (n8n), LLM orchestration (LangChain), and cloud analytics (BigQuery).
-
+I build data pipelines, ML systems, and AI-powered solutions. Currently focused on large-scale data processing, NLP, and semantic search — with hands-on experience in distributed computing (Databricks/PySpark), workflow automation (n8n), LLM orchestration (LangChain), and cloud architecture & analytics (AWS/BigQuery).
 
 ---
 
@@ -22,13 +21,26 @@ I build data pipelines, ML systems, and AI-powered solutions. Currently focused 
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
 ![Sentence Transformers](https://img.shields.io/badge/Sentence_Transformers-412991?style=flat)
 ![Vector DB](https://img.shields.io/badge/Vector_Database-00B4D8?style=flat)
+![Cohere](https://img.shields.io/badge/Cohere-39594C?style=flat&logo=cohere&logoColor=white)
 ![Claude](https://img.shields.io/badge/Claude_AI-000000?style=flat&logo=anthropic&logoColor=white)
+
+**Cloud & Infrastructure**
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white)
+![AWS Lambda](https://img.shields.io/badge/AWS_Lambda-FF9900?style=flat&logo=awslambda&logoColor=white)
+![Amazon S3](https://img.shields.io/badge/Amazon_S3-569A31?style=flat&logo=amazons3&logoColor=white)
+![Amazon API Gateway](https://img.shields.io/badge/API_Gateway-FF4F8B?style=flat&logo=amazonapigateway&logoColor=white)
+![Amazon RDS](https://img.shields.io/badge/Amazon_RDS-527FFF?style=flat&logo=amazonrds&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
+![Render](https://img.shields.io/badge/Render-46E3B7?style=flat&logo=render&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)
 
 **Automation & Backend**
 
 ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat&logo=n8n&logoColor=white)
 ![Airflow](https://img.shields.io/badge/Airflow-017CEE?style=flat&logo=apacheairflow&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
 ![Docker Compose](https://img.shields.io/badge/Docker_Compose-2496ED?style=flat&logo=docker&logoColor=white)
@@ -37,6 +49,7 @@ I build data pipelines, ML systems, and AI-powered solutions. Currently focused 
 
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=mysql&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
+![pgvector](https://img.shields.io/badge/pgvector-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
 ![DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?style=flat&logo=amazondynamodb&logoColor=white)
 ![BigQuery](https://img.shields.io/badge/BigQuery-4285F4?style=flat&logo=googlecloud&logoColor=white)
@@ -50,6 +63,23 @@ I build data pipelines, ML systems, and AI-powered solutions. Currently focused 
 ---
 
 ## 📌 Featured Projects
+
+### 🌐 [Interactive AI Portfolio & Serverless RAG Laboratory](https://carloscaicedo.vercel.app/)
+**Next.js · AWS Serverless · n8n · PostgreSQL/pgvector · Groq & Cohere**
+
+An interactive personal portfolio built as an "AI / Data laboratory." Instead of reading a static resume, visitors explore my technical profile and project details by chatting directly with an AI assistant powered by a 100% serverless RAG pipeline.
+
+- **Links:** [Live Web App](https://carloscaicedo.vercel.app/) · [Frontend Repository](https://github.com/00CARLOSECG00/carloscaicedo-portfolio) · [Backend Repository](https://github.com/00CARLOSECG00/carloscaicedo-portafolio-back)
+- **Frontend (Vercel):** Next.js (App Router) + TypeScript app that sends user queries to an n8n webhook and renders Markdown responses — including dynamic tables and links — 
+- **Content backend (Render):** REST API backed by a Supabase database for profile, project, experience, and education data
+- **Orchestration (n8n):** acts as an event-driven middleware/API gateway between the frontend and AWS, routing requests, keeping API keys isolated, and enabling rapid iteration
+- **Serverless RAG engine (AWS):** an API Gateway triggers a Lambda function that embeds the incoming question (via Cohere) and performs a cosine-distance similarity search in an AWS RDS PostgreSQL database using `pgvector`
+- **Generative AI:** retrieved context and the question are sent to Groq (`openai/gpt-oss-120b`) for near-instantaneous, high-quality Markdown response generation
+- **Event-driven ingestion:** dropping a new PDF into an AWS S3 bucket automatically triggers a Python Lambda (`procesador-documentos-rag`) that extracts text with `pypdf`, applies chunking, and stores 1024-dimensional vectors generated with Cohere's `embed-multilingual-v3.0`
+
+> `Next.js` · `TypeScript` · `Vercel` · `Render` · `Supabase` · `n8n` · `AWS Lambda` · `Amazon S3` · `API Gateway` · `RDS/pgvector` · `Cohere API` · `Groq API` · `Serverless Architecture`
+
+---
 
 ### 🎯 [Job Offer Scraper](https://github.com/00CARLOSECG00/Job-offer-scraper)
 **n8n · Groq API · Google Sheets API · Gmail API**
